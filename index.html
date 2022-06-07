@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./node_modules/chart.js/dist/chart.js"></script>
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card balance">
+      <div> <span>My balance</span>
+        <span class="balance-number">$921.48</span>
+      </div>
+      <div style="float: right;">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+
+    </div>
+    <div class="card chart-container">
+      <h2> Spending - Last 7 days</h2>
+      <canvas id="myChart" style="position: relative; height:25vh; width:40vw"></canvas>
+
+      <div class="total">
+        <div>
+          <span class="light-txt">Total this month</span>
+          <span style="font-weight: 600; font-size:2rem;">$478.33</span>
+        </div>
+
+        <div class="rightBottom">
+          <div>
+            <span style="font-weight: 600;">+2.4%</span>
+            <span class="light-txt">from last month</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+    integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

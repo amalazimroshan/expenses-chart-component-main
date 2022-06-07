@@ -1,0 +1,92 @@
+:root {
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--Cream);
+}
+
+.container {
+  height: 100vh;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.balance {
+  background-color: var(--Soft-red);
+  color: #fff;
+}
+.balance div {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.balance img {
+  float: right;
+  margin: auto 0;
+  margin-block: 0.5rem;
+}
+.balance span {
+  display: block;
+  margin-block: 10px;
+}
+.balance-number {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block;
+}
+.chart-container {
+  background-color: var(--Very-pale-orange);
+  color: var(--Dark-brown);
+}
+.total {
+  border-top: 2px solid var(--Cream);
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.total div {
+  display: inline-block;
+  height: 50px;
+}
+.total span {
+  display: block;
+}
+.rightBottom {
+  text-align: right;
+  display: flex;
+}
+.rightBottom div {
+  margin-top: 1rem;
+}
+.rightBottom span {
+  display: block;
+}
+
+.light-txt {
+  color: var(--Medium-brown);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
